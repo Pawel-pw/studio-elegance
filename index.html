@@ -1,237 +1,45 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Formularz ofertowy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Fryzjerskie Blask</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      background-color: #0f172a;
-      color: #ffffff;
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
     }
     header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      padding: 2rem 1rem 1rem;
     }
     header img {
       width: 80px;
-      margin-bottom: 1rem;
     }
-    h1 {
-      font-size: 2rem;
-      margin: 0.5rem 0;
-    }
-    p {
-      color: #cbd5e1;
-    }
-    iframe {
-      width: 90%;
-      max-width: 600px;
-      height: 450px;
-      border: 2px solid #334155;
-      border-radius: 16px;
-      margin: 2rem auto;
-      display: block;
-      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    header h1 {
+      margin-top: 0.5rem;
+      font-size: 2.2rem;
     }
     section {
       max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-      text-align: center;
+      margin: auto;
+      padding: 2rem 1rem;
     }
-    .pricing {
+    .services {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
+      gap: 1.5rem;
       justify-content: center;
     }
-    .plan {
-      background: #1e293b;
-      padding: 1.5rem;
-      border-radius: 12px;
+    .service {
+      background-color: #f2e9e4;
+      padding: 1.2rem;
+      border-radius: 10px;
       width: 250px;
-    }
-    .plan h3 {
-      margin-top: 0;
-      color: #38bdf8;
-    }
-    .plan p {
-      font-size: 0.9rem;
-      color: #e2e8f0;
-    }
-    .plan button {
-      margin-top: 1rem;
-      background-color: #38bdf8;
-      color: black;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    .contact, .reviews {
-      margin-top: 3rem;
-    }
-    input, textarea {
-      width: 90%;
-      max-width: 400px;
-      margin: 0.5rem 0;
-      padding: 0.5rem;
-      border-radius: 8px;
-      border: none;
-    }
-    textarea {
-      height: 100px;
-    }
-    .review {
-      margin: 1rem 0;
-      color: #94a3b8;
-    }
-    footer {
       text-align: center;
-      font-size: 0.85rem;
-      color: #94a3b8;
-      padding: 1rem;
-      border-top: 1px solid #334155;
-    }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo">
-    <h1>Formularz ofertowy</h1>
-    <p>Wypełnij, a my odezwiemy się z ofertą dopasowaną do Ciebie</p>
-  </header>
-
-  <iframe src="https://Pawel21W-formularz-ofertowy.hf.space"></iframe>
-
-  <section>
-    <h2>Cennik</h2>
-    <div class="pricing">
-      <div class="plan">
-        <h3>Podstawowy</h3>
-        <p>1 chatbot, bez integracji, gotowy w 24h</p>
-        <button>Zamów</button>
-      </div>
-      <div class="plan">
-        <h3>Standard</h3>
-        <p>2 chatboty, integracja z e-mailem, Google Sheets</p>
-        <button>Zamów</button>
-      </div>
-      <div class="plan">
-        <h3>Premium</h3>
-        <p>Chatbot + strona + płatności + wsparcie 7 dni</p>
-        <button>Zamów</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Kontakt</h2>
-    <form>
-      <input type="text" placeholder="Imię i nazwisko" required><br/>
-      <input type="email" placeholder="Adres e-mail" required><br/>
-      <textarea placeholder="Wiadomość"></textarea><br/>
-      <button type="submit">Wyślij</button>
-    </form>
-  </section>
-
-  <section class="reviews">
-    <h2>Opinie klientów</h2>
-    <div class="review">
-      <p>„Szybko, profesjonalnie i konkretnie. Polecam!” – <strong>Anna, trenerka</strong></p>
-    </div>
-    <div class="review">
-      <p>„Dostałem dokładnie to, czego potrzebowałem. Bot działa świetnie.” – <strong>Jakub, e-commerce</strong></p>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2>Płatność</h2>
-    <p>Po kliknięciu przycisku zostaniesz przekierowany do płatności:</p>
-    <a href="https://www.paypal.com/" target="_blank">
-      <button>Zapłać przez PayPal</button>
-    </a>
-  </section>
-
-  <footer>
-    &copy; 2025 PawelBots. Stworzone z pasją 💙 | <a href="#">Polityka prywatności</a>
-  </footer>
-
-  <!-- 🔵 Floating Chatbot Button + Widget -->
-  <style>
-    #chatbot-button {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background-color: #6c63ff;
-      border: none;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      font-size: 28px;
-      color: white;
-      cursor: pointer;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      z-index: 1000;
-    }
-
-    #chatbot-frame {
-      position: fixed;
-      bottom: 100px;
-      right: 30px;
-      width: 360px;
-      height: 500px;
-      border: none;
-      border-radius: 15px;
-      display: none;
-      z-index: 999;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.5);
-    }
-
-    #close-chatbot {
-      position: absolute;
-      top: 5px;
-      right: 10px;
-      font-size: 18px;
-      color: #fff;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      z-index: 1001;
-    }
-  </style>
-
-  <button id="chatbot-button">💬</button>
-
-  <div id="chatbot-container" style="position: relative;">
-    <iframe id="chatbot-frame" src="https://Pawel21W-formularz-ofertowy.hf.space"></iframe>
-    <button id="close-chatbot" style="display: none;">✖</button>
-  </div>
-
-  <script>
-    const button = document.getElementById('chatbot-button');
-    const iframe = document.getElementById('chatbot-frame');
-    const closeBtn = document.getElementById('close-chatbot');
-
-    button.onclick = () => {
-      iframe.style.display = 'block';
-      closeBtn.style.display = 'block';
-    };
-
-    closeBtn.onclick = () => {
-      iframe.style.display = 'none';
-      closeBtn.style.display = 'none';
-    };
-  </script>
-
-</body>
-</html>
+      box-shadow: 0 4px 10px rgb
